@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>📝 Notes App</h1>
+
+            <!-- Search Icon with Input -->
+            <div class="search-container">
+                <input type="text" id="searchNote" placeholder="Search...">
+                <i class="search-icon">🔍</i>
+            </div>
+
+            <!-- Dark Mode Toggle Button -->
+            <button id="toggleMode">🌙</button>
+        </div>
+
+        <!-- Add Note Area -->
+        <input type="text" id="noteTitle" placeholder="📌 Note Title...">
+        <textarea id="noteText" placeholder="📝 Write your note here..."></textarea>
+        <button id="addNote">➕ Add Note</button>
+        
+        <h2>Your Notes</h2>
+        <div id="notes"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
